@@ -56,7 +56,6 @@ body {
 .btn-primary:hover {
   background-color: var(--brand-green-dark);
   border-color: var(--brand-green-dark);
-  transform: translateY(-2px);
 }
 
 /* ============================
@@ -101,19 +100,20 @@ body {
    CARD / PRODUK
    ============================ */
 .card {
-  background-color: #335533;
+  background-color: var(--brand-green-secondary);
   border: 1px solid #446644;
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: var(--brand-green);
 }
 
 .card-header {
   background-color: var(--brand-green);
-  color: #000;
+  color: var(--brand-green-dark);
   font-weight: bold;
   text-align: center;
 }
@@ -190,6 +190,22 @@ body {
   background-color: var(--brand-green);
   border-color: var(--brand-green);
 }
+
+/* ============================
+   MODAL
+   ============================ */
+.modal-dialog {
+  max-width: 600px;
+}
+.modal-content {
+  background-color: var(--brand-green-secondary);
+  color: var(--brand-white);
+  border: 1px solid #446644;
+}
+   .modal-title {
+  color: var(--brand-green);
+}
+
 
 /* ============================
    TABEL
